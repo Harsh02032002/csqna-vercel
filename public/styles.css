@@ -1,0 +1,540 @@
+body, h1, h2,h3,h4,h5,h6,p{
+  font-family: 'Poppins' !important;
+}
+
+/* overriding mat table styles start */
+td{
+  font-family: 'Poppins' !important;
+}
+.mdc-text-field--filled {
+  background-color: none !important;
+}
+
+.mat-mdc-table {
+  background-color: none !important;
+}
+
+
+.mat-mdc-table tbody,
+.mat-mdc-table tfoot,
+.mat-mdc-cell,
+.mat-mdc-footer-cell,
+.mat-mdc-row,
+.mat-mdc-footer-row {
+  background: none !important;
+}
+/* overriding mat table styles end */
+
+
+/* You can add global styles to this file, and also import other style files */
+.centered-table th,
+.centered-table td {
+  text-align: center !important;
+}
+
+.nav-item:hover {
+  cursor: pointer !important;
+}
+
+/* .main-container {
+  padding: unset !important;
+} */
+
+.text-blue {
+  color: #007bff !important;
+}
+
+.breadcrumb-item.active {
+  color: #f30070 !important;
+}
+
+.fa.fa-search {
+  color: white;
+}
+
+.fa-search:before {
+  color: white !important;
+}
+
+.btn.btn-link {
+  color: #007bff;
+}
+
+
+
+
+#content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.skeleton-text {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  height: 20px;
+  margin: 10px 0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-text.short {
+  width: 60%;
+}
+
+.skeleton-text.xshort {
+  width: 40%;
+}
+
+.skeleton-text {
+  width: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+
+  50% {
+    background-color: #d0d0d0;
+  }
+
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+
+.loader {
+  display: flex;
+  justify-content: space-between;
+  /* Space between dots */
+  width: 60px;
+  /* Width of the loader */
+}
+
+.dot {
+  width: 12px;
+  /* Width of each dot */
+  height: 12px;
+  /* Height of each dot */
+  border-radius: 50%;
+  /* Make dots circular */
+  background-color: #3498db;
+  /* Dot color */
+  opacity: 0;
+  /* Start with dots hidden */
+  animation: blink 1.2s infinite;
+  /* Blinking animation */
+}
+
+/* Animation for blinking dots */
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 0;
+    /* Hidden */
+  }
+
+  50% {
+    opacity: 1;
+    /* Visible */
+  }
+}
+
+/* Delaying animation for each dot */
+.dot:nth-child(1) {
+  animation-delay: 0s;
+  /* No delay for the first dot */
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+  /* 0.2s delay for the second dot */
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+  /* 0.4s delay for the third dot */
+}
+
+.cursor-p:hover {
+  cursor: pointer
+}
+
+.dashboardTable tbody td {
+  color: var(--body_text_color) !important;
+}
+
+.dashboardTable tbody td .rt-btn.rt-gradient2 {
+  color: var(--white) !important;
+}
+
+.custom-select.select-records {
+  width: 60px !important;
+}
+
+.search-bar-wrapper {
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  border-radius: 15px 0 0 15px !important;
+  background-color: var(--footer-bg) !important;
+  padding: 7px 10px !important;
+  border: 1px solid #e1dfdf !important;
+  min-width: 200px !important;
+  font-size: 14px !important;
+  height: 35px !important;
+  box-shadow: none !important;
+}
+
+.support-img {
+  width: 22px;
+}
+
+.search-bar-wrapper .input-group-append button {
+  border: 1px solid #e1dfdf !important;
+  background-color: var(--footer-bg) !important;
+  border-radius: 0 15px 15px 0 !important;
+}
+
+.search-bar-wrapper .input-group-append button .fa:before {
+  font-size: 1.5em;
+  color: #000 !important;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.main-panel .pagination.rt-paganation {
+  justify-content: end !important;
+}
+
+.main-panel .pagination.rt-paganation li.page-item.active .page-link {
+  color: var(--white);
+  background-image: none !important;
+  background-color: var(--primary__color_light) !important;
+}
+
+.main-panel .pagination.rt-paganation li.page-item .page-link:hover {
+  color: var(--white);
+  background-image: none !important;
+  background-color: var(--primary__color) !important;
+}
+
+.main-panel .pagination.rt-paganation li.page-item .page-link {
+  font-size: 16px;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+}
+
+.main-panel .pagination.rt-paganation li.page-item {
+  margin-right: 10px;
+}
+
+.main-panel .pagination.rt-paganation li.page-item:last-child .page-link,
+.main-panel .pagination.rt-paganation li.page-item:first-child .page-link {
+  width: 50px;
+}
+
+.paneltabs .dataTables_length {
+  padding-top: 15px !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+}
+
+/* Modal Css Start /////////////////////////////////////// */
+.modal-confirm {
+  color: var(--body_text_color);
+  font-size: 14px;
+}
+
+.modal-confirm .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal-confirm .modal-header {
+  border-bottom: none;
+  position: relative;
+}
+
+.modal-confirm h4 {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px 0 -15px;
+}
+
+.modal-confirm .form-control,
+.modal-confirm .btn {
+  min-height: 40px;
+  border-radius: 3px;
+}
+
+.modal-confirm .close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.modal-confirm .modal-footer {
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.modal-confirm .icon-box {
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -64px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  z-index: 9;
+  background: var(--primary__color_light);
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.modal-confirm .icon-box i {
+  font-size: 40px;
+  position: relative;
+  top: 6px;
+}
+
+.modal-confirm.modal-dialog {
+  margin-top: 80px;
+}
+
+.modal-confirm .btn {
+  color: #fff;
+  border-radius: 4px;
+  background: var(--primary__color_light);
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: normal;
+  border: none;
+}
+
+.modal-confirm .btn:hover,
+.modal-confirm .btn:focus {
+  outline: none;
+}
+
+.modal-master {
+  position: absolute;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+/* Modal Css End /////////////////////////////////////// */
+
+/* Tooltip Css End /////////////////////////////////////// */
+.tooltip-master {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tooltip-master>.text-overflow{
+  max-width: 10vw;
+  overflow: auto;
+  display: block;
+}
+
+.custom-tooltip-right {
+  visibility: hidden;
+  width: 45vw;
+  background-color: #222;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  transform: translateY(-50%); 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: normal;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+table tr:first-child td .custom-tooltip-right {
+  transform: translateY(-10%);
+}
+table tr:nth-child(2) td .custom-tooltip-right {
+  transform: translateY(-30%);
+}
+table tr:nth-last-child(2) td .custom-tooltip-right {
+  transform: translateY(-70%);
+}
+table tr:last-child td .custom-tooltip-right {
+  transform: translateY(-90%);
+}
+
+.custom-tooltip-left {
+  visibility: hidden;
+  width: 45vw;
+  background-color: #222;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 110%;
+  top: 50%;
+  transform: translateY(-50%); 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: normal;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.custom-tooltip-top {
+  visibility: hidden;
+  /* width: 50vw; */
+  background-color: #222;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 110%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: normal;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.custom-tooltip-topleft {
+  visibility: hidden;
+  /* width: 50vw; */
+  background-color: #222;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 110%;
+  transform: translateX(-70%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: normal;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* Show tooltip on hover */
+.tooltip-master:hover .custom-tooltip-top, 
+.tooltip-master:hover .custom-tooltip-topleft, 
+.tooltip-master:hover .custom-tooltip-right,
+.tooltip-master:hover .custom-tooltip-left {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Tooltip arrow */
+.custom-tooltip-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;   /* height adjut for arraw*/
+  right: 100%;
+  margin-top: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent #222 transparent transparent;
+}
+table tr:first-child td .custom-tooltip-right::after {
+  top: 10%;
+}
+table tr:nth-child(2) td .custom-tooltip-right::after {
+  top: 30%;
+}
+table tr:nth-last-child(2) td .custom-tooltip-right::after {
+  top: 70%;
+}
+table tr:last-child td .custom-tooltip-right::after {
+  top: 90%;
+}
+.custom-tooltip-left::after {
+  content: "";
+  position: absolute;
+  top: 50%;   /* height adjut for arraw*/
+  left: 100%;
+  margin-top: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent #222 ;
+}
+.custom-tooltip-top::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+.custom-tooltip-topleft::after {
+  content: "";
+  position: absolute;
+  left: 70%;
+  top: 100%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.rt-btn.disabled {
+  pointer-events: none;
+  /* Disables clicking */
+  opacity: 0.7;
+  /* Lowers opacity for visual effect */
+}
+
+app-user .table-overflow-control {
+  overflow: auto;
+  max-height: 55vh;
+  /* max-height: 70vh; */
+}
+
+app-admin .table-overflow-control {
+  overflow: auto;
+  max-height: 80vh;
+}
+
+.btn:has(img) {
+  padding: 0px;
+}
+/* Tooltip Css End /////////////////////////////////////// */

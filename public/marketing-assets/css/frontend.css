@@ -1,0 +1,69 @@
+/**!-------------------------------------------------
+
+   ---- Deafult--------
+       1.0 Root Css
+    ----------------------------------------------------- */
+/* */
+/*1.0 Root Css*/
+:root
+{
+    --Primary__color: #f30070;
+    --Secondary__color: #ff6d00;
+    --body_text_color: #2e3d62;
+    --commonfont: 'Poppins';
+
+    /* Gradients */
+    --header_grad_one: #8274E8; /* Purple */
+    --header_grad_two: #C679D0; /* Lavender */
+
+    --grad1_box_1: #7e5dfe;
+    --grad2_box_1: #aa67df;
+
+    --grad1_box_2: #5052fe;
+    --grad2_box_2: #4bc9fe;
+
+    --grad1_box_3: #e9813b;
+    --grad2_box_3: #fdb23c;
+
+    --grad_violet: #9932F5;
+    --grad_royal_blue: #4950f8;
+
+    --white: #fff;
+    --footer-bg: #f6f7fa;
+
+    /* Black Color Shades */
+    --black: #000;
+    --text111: #111;
+    --text333: #333;
+    --text444: #444;
+    --text555: #555;
+    --text777: #777;
+    --text999: #999;
+    --text323: #323639;
+
+    /* Green Color Shades */
+    --text2f7: #2f7000;
+    --text338: #33880b;
+
+    /* Grey Color Shades */
+    --text424: #42435d;
+    --text878: #878484; /* Single time used */
+    --text656: #656f7f; /* Single time used */
+
+    /* Blue Color Shades */
+    --text422: #4228a8;
+    --text234: #234d94; /* Single time used */
+    --text605: #6051cf;  /*Indigo*/ /* Single time used */
+
+    /* Orange Color Shades */
+    --texteb7: #eb7e0a;  /* Used as a gradient with Primary Color */
+    
+}
+
+.dashboardTable tbody td{
+    color: var(--body_text_color) !important;
+}
+
+.dashboardTable tbody td .rt-btn.rt-gradient2{
+    color: var(--white) !important;
+}

@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom adjustments if any */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ================= Swiper Custom Styling ================= */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  transition: 0.3s;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+/* ================= Video Wrapper Sizing (16:9) ================= */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #000;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= FAQ Accordion Custom Styles ================= */
+section.faq-area, #accordion {
+  scroll-margin-top: 120px; /* Prevent anchor links from cutting off under the sticky header */
+}
+
+#accordion .faq-card {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+#accordion .faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+#accordion .faq-header h5 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 500 !important; /* Lighter font weight like production */
+  color: #854c93 !important; /* Brand purple */
+  text-transform: none !important; /* Disable auto-capitalization */
+  line-height: 1.5;
+}
+
+#accordion .faq-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #854c93;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 15px;
+}
+
+#accordion .faq-body {
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid #f1f1f1;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: justify;
+}
