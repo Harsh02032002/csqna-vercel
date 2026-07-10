@@ -10,7 +10,6 @@ export const Dashboard: React.FC = () => {
     completed: 0,
     total: 0,
   });
-  const [loading, setLoading] = useState(true);
   const chartRef = useRef<HTMLCanvasElement | null>(null);
   const chartInstance = useRef<any>(null);
 
@@ -99,8 +98,6 @@ export const Dashboard: React.FC = () => {
         }
       } catch (err) {
         console.error('Failed to load dashboard data:', err);
-      } finally {
-        setLoading(false);
       }
     };
 

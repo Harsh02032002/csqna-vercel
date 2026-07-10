@@ -13,7 +13,7 @@ export const Home: React.FC = () => {
     // Initialize Swiper after render
     const win = window as any;
     if (win.Swiper) {
-      const blogSwiper = new win.Swiper(".myBlogSwiper", {
+      new win.Swiper(".myBlogSwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
         loop: true,
@@ -48,7 +48,7 @@ export const Home: React.FC = () => {
         },
       });
 
-      const testimonialSwiper = new win.Swiper(".myTestimonialSwiper", {
+      new win.Swiper(".myTestimonialSwiper", {
         slidesPerView: 2,
         spaceBetween: 30,
         loop: false,

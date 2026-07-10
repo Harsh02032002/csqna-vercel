@@ -129,7 +129,7 @@ export const UserLayout: React.FC = () => {
       </div>
 
       {/* Main Content Render area */}
-      <div className="main-panel" style={{ paddingLeft: sidebarCollapsed ? '0' : '260px', pt: '80px', transition: 'all 0.3s' }}>
+      <div className="main-panel" style={{ paddingLeft: sidebarCollapsed ? '0' : '260px', paddingTop: '80px', transition: 'all 0.3s' }}>
         <div className="content" style={{ padding: '30px' }}>
           <Outlet />
         </div>
