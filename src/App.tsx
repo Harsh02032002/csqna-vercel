@@ -6,6 +6,15 @@ import Footer from './components/Footer';
 import UserLayout from './components/UserLayout';
 import AdminLayout from './components/AdminLayout';
 
+// Certificate Pages
+import Ceh from './pages/certificates/Ceh';
+import Cisa from './pages/certificates/Cisa';
+import Cipp from './pages/certificates/Cipp';
+import Cissp from './pages/certificates/Cissp';
+import Dpdp from './pages/certificates/Dpdp';
+import Iso from './pages/certificates/Iso';
+import Aaia from './pages/certificates/Aaia';
+
 // Public Pages
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -44,6 +53,13 @@ const PublicLayout: React.FC = () => {
           <Route path="/user-consent-agreement" element={<UserConsent />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/ceh" element={<Ceh />} />
+          <Route path="/cisa" element={<Cisa />} />
+          <Route path="/cipp" element={<Cipp />} />
+          <Route path="/cissp" element={<Cissp />} />
+          <Route path="/dpdp" element={<Dpdp />} />
+          <Route path="/iso" element={<Iso />} />
+          <Route path="/aaia" element={<Aaia />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>

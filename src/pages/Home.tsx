@@ -437,6 +437,40 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Training Section */}
+      <div className="rt-spacer-100 rt-spacer-xs-60"></div>
+      <section className="services-area rtbgprefix-contain" style={{ background: '#F6F7FA', padding: '60px 0' }}>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-9 col-lg-9 mx-auto text-center rt-mb-50">
+              <h2 className="rt-section-title">Training Programs</h2>
+              <p className="rt-light3 f-size-16 line-height-30">Expert-led training programs to build your cybersecurity and compliance skills.</p>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            {[
+              { icon: '🛡️', title: 'ISO 27001:2022', desc: 'Information Security Management System implementation, auditing, and certification readiness training.' },
+              { icon: '🔄', title: 'BCP / DR', desc: 'Business Continuity Planning and Disaster Recovery strategy, design, and testing frameworks.' },
+              { icon: '🏦', title: 'RBI PAPG', desc: 'RBI Payment Aggregator and Payment Gateway compliance training aligned with RBI master directions.' },
+              { icon: '🤝', title: 'TPRM', desc: 'Third Party Risk Management — vendor assessment, due diligence, and ongoing monitoring frameworks.' }
+            ].map((item, i) => (
+              <div className="col-lg-3 col-md-6 rt-mb-30" key={i}>
+                <div className="rt-single-icon-box icon-center text-center shdoaw-style3 rt-pt-35 rt-pb-35 rt-pl-20 rt-pr-20" style={{ height: '100%', background: '#fff' }}>
+                  <div style={{ fontSize: '48px', marginBottom: '15px' }}>{item.icon}</div>
+                  <div className="iconbox-content">
+                    <h5 className="rt-mb-15" style={{ color: '#854c93', fontWeight: 700 }}>{item.title}</h5>
+                    <p className="f-size-14" style={{ color: '#555', lineHeight: '1.7' }}>{item.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center rt-mt-30">
+            <a href="mailto:consult@csqna.com" className="rt-btn rt-gradient pill text-uppercase rt-Bshadow-1 rt-sm2">Enquire About Training</a>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Blogs Slider (inside Footer container area in original html, we render it here) */}
       <div className="rt-spacer-100 rt-spacer-xs-60"></div>
       <section className="blog-section pb-5" style={{ background: '#fcfcfc' }}>

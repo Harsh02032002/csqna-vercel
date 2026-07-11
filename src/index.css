@@ -112,3 +112,32 @@ section.faq-area, #accordion {
   line-height: 1.7;
   text-align: justify;
 }
+
+/* ================= Certificate Pages - Card Fixes ================= */
+/* heading color override is in app.css end */
+
+.cert-page .blue-block {
+  background-color: #fff !important;
+  color: #333 !important;
+}
+
+.cert-page .blue-block:hover {
+  background-color: #f3eaf5 !important;
+  color: #333 !important;
+}
+
+.cert-page .blue-block h3 {
+  color: #854c93 !important;
+}
+
+.cert-page .blue-block:hover h3 {
+  color: #854c93 !important;
+}
+
+.cert-page .blue-block p {
+  color: #444 !important;
+}
+
+.cert-page .blue-block .f-size-14 {
+  color: #444 !important;
+}

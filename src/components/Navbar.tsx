@@ -26,13 +26,13 @@ export const Navbar: React.FC = () => {
                   <li className="menu-item-has-children">
                     <a href="#" onClick={(e) => e.preventDefault()}>Certifications</a>
                     <ul className="sub-menu">
-                      <li><a href="https://cisa.csqna.com" target="_blank" rel="noopener noreferrer">CISA</a></li>
-                      <li><a href="https://ceh.csqna.com" target="_blank" rel="noopener noreferrer">CEH</a></li>
-                      <li><a href="https://cipp.csqna.com" target="_blank" rel="noopener noreferrer">CIPP</a></li>
-                      <li><a href="https://cissp.csqna.com" target="_blank" rel="noopener noreferrer">CISSP</a></li>
-                      <li><a href="https://dpdp.csqna.com" target="_blank" rel="noopener noreferrer">DPDP</a></li>
-                      <li><a href="https://iso.csqna.com" target="_blank" rel="noopener noreferrer">ISO 27001</a></li>
-                      <li><a href="https://aaia.csqna.com" target="_blank" rel="noopener noreferrer">AAIA</a></li>
+                      <li><Link to="/cisa">CISA</Link></li>
+                      <li><Link to="/ceh">CEH</Link></li>
+                      <li><Link to="/cipp">CIPP</Link></li>
+                      <li><Link to="/cissp">CISSP</Link></li>
+                      <li><Link to="/dpdp">DPDP</Link></li>
+                      <li><Link to="/iso">ISO 27001</Link></li>
+                      <li><Link to="/aaia">AAIA</Link></li>
                     </ul>
                   </li>
                   <li><Link to="/pricing">Pricing</Link></li>
