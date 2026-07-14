@@ -1,7 +1,7 @@
 import axios, { InternalAxiosRequestConfig, AxiosResponse } from 'axios';
 import { encrypt, decrypt } from './crypto';
 
-const API_BASE = 'http://localhost:5003/v1';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5003/v1';
 
 const api = axios.create({
   baseURL: API_BASE,

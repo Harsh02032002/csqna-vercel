@@ -31,18 +31,71 @@ export const Aaia: React.FC = () => {
       question: 'How do I maintain the AAIA certification?',
       answer: 'You must earn and report 10 Continuing Professional Education (CPE) hours specifically in Artificial Intelligence (AI) domains annually and pay the maintenance fee.'
     }
-  ];
-
-  return (
+  ];  return (
     <div className="cert-page">
-      <div className="rt-breadcump breaducump-style-2">
-        <div className="rt-page-bg rtbgprefix-full"
-             style={{ backgroundImage: "url(/marketing-assets/images/banner/About-us-banner.png)", height: '350px' }}>
+      <div className="rt-breadcump breaducump-style-2" style={{ 
+        position: 'relative', 
+        height: '280px', 
+        overflow: 'hidden',
+        background: 'linear-gradient(135deg, #1b0222 0%, #3b094c 100%)',
+        borderBottom: '1px solid rgba(255,255,255,0.08)'
+      }}>
+        {/* Abstract Grid/Dot Pattern */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: 'radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px)',
+          backgroundSize: '20px 20px',
+          opacity: 0.4
+        }}></div>
+        {/* Glow circles */}
+        <div style={{
+          position: 'absolute',
+          top: '-20%',
+          right: '10%',
+          width: '300px',
+          height: '300px',
+          background: 'radial-gradient(circle, rgba(168, 85, 247, 0.4) 0%, transparent 70%)',
+          filter: 'blur(30px)'
+        }}></div>
+
+        {/* Dynamic SVG Object on the Right */}
+        <div style={{
+          position: 'absolute',
+          right: '8%',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          width: '180px',
+          height: '180px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1
+        }}>
+          <svg width="130" height="130" viewBox="0 0 24 24" fill="none" stroke="url(#aaiaGrad)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ filter: 'drop-shadow(0 0 15px rgba(192, 132, 252, 0.5))' }}>
+            <defs>
+              <linearGradient id="aaiaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#c084fc" />
+                <stop offset="100%" stopColor="#a855f7" />
+              </linearGradient>
+            </defs>
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
         </div>
-        <div className="container">
-          <div className="row align-items-left" style={{ paddingTop: '140px' }}>
-            <div className="col-lg-8">
-              <h1 className="f-size-50 f-size-lg-40 f-size-md-30 f-size-xs-22 rt-strong text-white text-uppercase" data-content-key="aaia_banner_title">
+
+        <div style={{ position: 'relative', zIndex: 2 }} className="container">
+          <div className="row align-items-left" style={{ paddingTop: '80px' }}>
+            <div className="col-lg-7 col-md-9">
+              <div className="disclaimer-banner">
+                <span className="disclaimer-title">⚠️ Disclaimer:</span>
+                <span className="disclaimer-text">We are not affiliated with, associated with, authorized by, endorsed by, or in any way officially connected with ISACA.</span>
+              </div>
+              <h1 className="f-size-50 f-size-lg-40 f-size-md-30 f-size-xs-22 rt-strong text-uppercase" data-content-key="aaia_banner_title">
                 {t('aaia_banner_title', 'AAIA')}
               </h1>
             </div>
@@ -50,15 +103,13 @@ export const Aaia: React.FC = () => {
         </div>
       </div>
 
-      <div className="rt-spacer-100"></div>
+      <div className="rt-spacer-10"></div>
 
       <section className="page-content-area bg-elements-parent">
         <div className="container">
-          <div className="row justify-content-center text-center">
-            <div className="col-lg-9">
-              <h2 className="rt-section-title" data-content-key="aaia_hero_title">
-                {t('aaia_hero_title', 'AAIA CERTIFICATION')}
-              </h2>
+          <div className="row align-items-center">
+            <div className="col-lg-7 text-left">
+
               <p className="rt-light3 f-size-20 line-height-34 rt-mb-20 font-weight-bold" data-content-key="aaia_hero_subtitle">
                 {t('aaia_hero_subtitle', 'Advanced in AI Audit (AAIA) - Governance, Risk, and Compliance for Artificial Intelligence')}
               </p>
@@ -66,15 +117,61 @@ export const Aaia: React.FC = () => {
                 {t('aaia_hero_desc', "ISACA's specialized credential validating your ability to audit operational risk, establish robust governance, and verify regulatory compliance for AI systems.")}
               </p>
               <div className="rt-spacer-30"></div>
-              <div className="d-flex justify-content-center gap-3">
+              <div className="d-flex gap-3">
                 <a href="#exam-details" className="rt-btn rt-gradient pill text-uppercase rt-Bshadow-1 rt-sm2">Exam Details</a>
                 <a href="#eligibility" className="rt-btn pill text-uppercase rt-sm2 bg-secondary text-white">Check Eligibility</a>
+              </div>
+            </div>
+
+            <div className="col-lg-5 mt-5 mt-lg-0">
+              <div className="credential-card text-left">
+                <div className="d-flex justify-content-between align-items-start mb-4">
+                  <div className="d-flex align-items-center gap-2">
+                    <div className="d-flex align-items-center justify-content-center" style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)' }}>
+                      <span style={{ color: '#fbbf24', fontWeight: 'bold' }}>★</span>
+                    </div>
+                    <div>
+                      <h4 className="text-uppercase m-0" style={{ fontSize: '12px', fontWeight: '600', letterSpacing: '1px', color: '#d8b4fe' }}>CSQNA Prep Pack</h4>
+                      <p className="m-0" style={{ fontSize: '9px', color: '#94a3b8' }}>VERIFIED PREP MATERIAL</p>
+                    </div>
+                  </div>
+                  <div>
+                    <span className="badge bg-success text-white" style={{ fontSize: '9px', padding: '3px 8px', borderRadius: '50px' }}>Active</span>
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <h3 className="text-white text-uppercase mb-1" style={{ fontSize: '20px', fontWeight: 'bold' }}>AAIA</h3>
+                  <p className="mb-3" style={{ fontSize: '12px', color: '#cbd5e1' }}>Advanced in AI Audit Prep</p>
+                  
+                  <div className="p-3" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}>
+                    <div className="row">
+                      <div className="col-6">
+                        <span style={{ display: 'block', fontSize: '9px', color: '#94a3b8', textTransform: 'uppercase' }}>Exam Questions</span>
+                        <span style={{ fontSize: '15px', fontWeight: 'bold', color: '#fbbf24' }}>90 Qs</span>
+                      </div>
+                      <div className="col-6">
+                        <span style={{ display: 'block', fontSize: '9px', color: '#94a3b8', textTransform: 'uppercase' }}>Domains</span>
+                        <span style={{ fontSize: '15px', fontWeight: 'bold', color: '#fbbf24' }}>3 Domains</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="d-flex justify-content-between align-items-center pt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                  <div>
+                    <span style={{ display: 'block', fontSize: '8px', color: '#94a3b8', textTransform: 'uppercase' }}>Support Email</span>
+                    <span style={{ fontSize: '11px', color: '#d8b4fe' }}>info@csqna.com</span>
+                  </div>
+                  <div style={{ width: '36px', height: '36px', borderRadius: '50%', border: '2px solid rgba(251,191,36,0.5)', background: 'rgba(251,191,36,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span style={{ fontSize: '9px', fontWeight: 'bold', color: '#fbbf24' }}>SEAL</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <div className="rt-spacer-100"></div>
       <section id="exam-details" style={{ background: '#F6F7FA', padding: '60px 0' }}>
         <div className="container">

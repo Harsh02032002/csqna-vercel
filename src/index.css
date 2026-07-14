@@ -141,3 +141,92 @@ section.faq-area, #accordion {
 .cert-page .blue-block .f-size-14 {
   color: #444 !important;
 }
+
+/* ===== GLOBAL LAYOUT ADJUSTMENTS FOR FIXED NAVBAR ===== */
+.rt-site-header {
+  height: 60px !important;
+}
+
+.rt-site-header .main-header {
+  padding: 0 !important;
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.rt-site-header .navbar {
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.rt-site-header .brand-logo img {
+  max-height: 40px !important;
+  width: auto !important;
+}
+
+.rt-site-header .sticky-logo img {
+  max-height: 40px !important;
+  width: auto !important;
+}
+
+/* Push all public pages below the fixed header */
+main.flex-grow {
+  padding-top: 60px !important;
+}
+
+/* Clean up cert-page specific padding */
+.cert-page {
+  padding-top: 0 !important;
+}
+
+.cert-page .rt-breadcump h1 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.cert-page .rt-breadcump .text-white {
+    color: #ffffff !important;
+}
+
+/* ===== DISCLAIMER BANNER STYLES ===== */
+.disclaimer-banner {
+    background-color: #fffbeb !important;
+    border-left: 4px solid #f59e0b !important;
+    padding: 10px 14px !important;
+    border-radius: 0 8px 8px 0 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04) !important;
+    margin-bottom: 20px !important;
+    display: inline-block !important;
+    max-width: 100% !important;
+    text-align: left !important;
+}
+.disclaimer-banner .disclaimer-title {
+    color: #b45309 !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    margin-right: 8px !important;
+}
+.disclaimer-banner .disclaimer-text {
+    color: #78350f !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+/* ===== INTERACTIVE CREDENTIAL CARD ===== */
+.credential-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #2d153b 0%, #190a22 100%) !important;
+    color: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    box-shadow: 0 10px 25px -5px rgba(133, 76, 147, 0.3), 0 8px 10px -6px rgba(133, 76, 147, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease !important;
+}
+
+.credential-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 20px 30px -10px rgba(133, 76, 147, 0.4), 0 10px 15px -5px rgba(133, 76, 147, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+

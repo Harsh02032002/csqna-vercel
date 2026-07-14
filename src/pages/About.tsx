@@ -11,11 +11,13 @@ export const About: React.FC = () => {
   return (
     <div>
       {/* Breadcrumb Area */}
-      <div className="rt-breadcump breaducump-style-2">
-        <div className="rt-page-bg rtbgprefix-full"
-             style={{ backgroundImage: "url(/marketing-assets/images/banner/About-us-banner.png)", height: '434px' }}>
-        </div>
-        <div className="container">
+      <div className="rt-breadcump breaducump-style-2" style={{ position: 'relative', height: '434px', overflow: 'hidden' }}>
+        <img
+          src="/marketing-assets/images/banner/About-us-banner.png"
+          alt="About Us Banner"
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center' }}
+        />
+        <div style={{ position: 'relative', zIndex: 2 }} className="container">
           <div className="row align-items-left" style={{ paddingTop: '170px' }}>
             <div className="col-lg-8">
               <h1 className="f-size-60 f-size-lg-50 f-size-md-40 f-size-xs-24 rt-strong">About Us</h1>

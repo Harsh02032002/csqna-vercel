@@ -91,6 +91,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
 
+    <!-- Env config for chatbot -->
+    <script>
+      window.CHAT_API_URL = "%VITE_API_URL%/chat";
+    </script>
+
+    <!-- Chatbot script -->
+    <script src="/assets/js/chatbot.js"></script>
+
     <!-- React Main entry point -->
     <script type="module" src="/src/main.tsx"></script>
 </body>

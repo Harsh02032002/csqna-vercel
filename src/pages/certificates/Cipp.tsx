@@ -35,14 +35,69 @@ export const Cipp: React.FC = () => {
 
   return (
     <div className="cert-page">
-      <div className="rt-breadcump breaducump-style-2">
-        <div className="rt-page-bg rtbgprefix-full"
-             style={{ backgroundImage: "url(/marketing-assets/images/banner/About-us-banner.png)", height: '350px' }}>
+      <div className="rt-breadcump breaducump-style-2" style={{ 
+        position: 'relative', 
+        height: '280px', 
+        overflow: 'hidden',
+        background: 'linear-gradient(135deg, #09132e 0%, #1c2b54 100%)',
+        borderBottom: '1px solid rgba(255,255,255,0.08)'
+      }}>
+        {/* Abstract Grid/Dot Pattern */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: 'radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px)',
+          backgroundSize: '20px 20px',
+          opacity: 0.4
+        }}></div>
+        {/* Glow circles */}
+        <div style={{
+          position: 'absolute',
+          top: '-20%',
+          right: '10%',
+          width: '300px',
+          height: '300px',
+          background: 'radial-gradient(circle, rgba(59, 130, 246, 0.4) 0%, transparent 70%)',
+          filter: 'blur(30px)'
+        }}></div>
+
+        {/* Dynamic SVG Object on the Right */}
+        <div style={{
+          position: 'absolute',
+          right: '8%',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          width: '180px',
+          height: '180px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1
+        }}>
+          <svg width="130" height="130" viewBox="0 0 24 24" fill="none" stroke="url(#cippGrad)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ filter: 'drop-shadow(0 0 15px rgba(96, 165, 250, 0.5))' }}>
+            <defs>
+              <linearGradient id="cippGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#60a5fa" />
+                <stop offset="100%" stopColor="#3b82f6" />
+              </linearGradient>
+            </defs>
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <rect x="9" y="10" width="6" height="5" rx="1" />
+            <path d="M10 10V8a2 2 0 0 1 4 0v2" />
+          </svg>
         </div>
-        <div className="container">
-          <div className="row align-items-left" style={{ paddingTop: '140px' }}>
-            <div className="col-lg-8">
-              <h1 className="f-size-50 f-size-lg-40 f-size-md-30 f-size-xs-22 rt-strong text-white text-uppercase" data-content-key="cipp_banner_title">
+
+        <div style={{ position: 'relative', zIndex: 2 }} className="container">
+          <div className="row align-items-left" style={{ paddingTop: '80px' }}>
+            <div className="col-lg-7 col-md-9">
+              <div className="disclaimer-banner">
+                <span className="disclaimer-title">⚠️ Disclaimer:</span>
+                <span className="disclaimer-text">We are not affiliated with, associated with, authorized by, endorsed by, or in any way officially connected with IAPP.</span>
+              </div>
+              <h1 className="f-size-50 f-size-lg-40 f-size-md-30 f-size-xs-22 rt-strong text-uppercase" data-content-key="cipp_banner_title">
                 {t('cipp_banner_title', 'CIPP')}
               </h1>
             </div>
@@ -50,15 +105,13 @@ export const Cipp: React.FC = () => {
         </div>
       </div>
 
-      <div className="rt-spacer-100"></div>
+      <div className="rt-spacer-10"></div>
 
       <section className="page-content-area bg-elements-parent">
         <div className="container">
-          <div className="row justify-content-center text-center">
-            <div className="col-lg-9">
-              <h2 className="rt-section-title" data-content-key="cipp_hero_title">
-                {t('cipp_hero_title', 'CIPP CERTIFICATION')}
-              </h2>
+          <div className="row align-items-center">
+            <div className="col-lg-7 text-left">
+
               <p className="rt-light3 f-size-20 line-height-34 rt-mb-20 font-weight-bold" data-content-key="cipp_hero_subtitle">
                 {t('cipp_hero_subtitle', 'Certified Information Privacy Professional - The Global Gold Standard in Privacy Certification')}
               </p>
@@ -66,9 +119,56 @@ export const Cipp: React.FC = () => {
                 {t('cipp_hero_desc', 'Demonstrate comprehensive knowledge of privacy laws, regulations, and frameworks across all sectors and jurisdictions.')}
               </p>
               <div className="rt-spacer-30"></div>
-              <div className="d-flex justify-content-center gap-3">
+              <div className="d-flex gap-3">
                 <a href="#exam-details" className="rt-btn rt-gradient pill text-uppercase rt-Bshadow-1 rt-sm2">Exam Details</a>
                 <a href="#eligibility" className="rt-btn pill text-uppercase rt-sm2 bg-secondary text-white">Check Eligibility</a>
+              </div>
+            </div>
+
+            <div className="col-lg-5 mt-5 mt-lg-0">
+              <div className="credential-card text-left">
+                <div className="d-flex justify-content-between align-items-start mb-4">
+                  <div className="d-flex align-items-center gap-2">
+                    <div className="d-flex align-items-center justify-content-center" style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)' }}>
+                      <span style={{ color: '#fbbf24', fontWeight: 'bold' }}>★</span>
+                    </div>
+                    <div>
+                      <h4 className="text-uppercase m-0" style={{ fontSize: '12px', fontWeight: '600', letterSpacing: '1px', color: '#d8b4fe' }}>CSQNA Prep Pack</h4>
+                      <p className="m-0" style={{ fontSize: '9px', color: '#94a3b8' }}>VERIFIED PREP MATERIAL</p>
+                    </div>
+                  </div>
+                  <div>
+                    <span className="badge bg-success text-white" style={{ fontSize: '9px', padding: '3px 8px', borderRadius: '50px' }}>Active</span>
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <h3 className="text-white text-uppercase mb-1" style={{ fontSize: '20px', fontWeight: 'bold' }}>CIPP</h3>
+                  <p className="mb-3" style={{ fontSize: '12px', color: '#cbd5e1' }}>Certified Information Privacy Professional</p>
+                  
+                  <div className="p-3" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px' }}>
+                    <div className="row">
+                      <div className="col-6">
+                        <span style={{ display: 'block', fontSize: '9px', color: '#94a3b8', textTransform: 'uppercase' }}>Exam Questions</span>
+                        <span style={{ fontSize: '15px', fontWeight: 'bold', color: '#fbbf24' }}>90 Qs</span>
+                      </div>
+                      <div className="col-6">
+                        <span style={{ display: 'block', fontSize: '9px', color: '#94a3b8', textTransform: 'uppercase' }}>Knowledge Areas</span>
+                        <span style={{ fontSize: '15px', fontWeight: 'bold', color: '#fbbf24' }}>4 Areas</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="d-flex justify-content-between align-items-center pt-3" style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+                  <div>
+                    <span style={{ display: 'block', fontSize: '8px', color: '#94a3b8', textTransform: 'uppercase' }}>Support Email</span>
+                    <span style={{ fontSize: '11px', color: '#d8b4fe' }}>info@csqna.com</span>
+                  </div>
+                  <div style={{ width: '36px', height: '36px', borderRadius: '50%', border: '2px solid rgba(251,191,36,0.5)', background: 'rgba(251,191,36,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span style={{ fontSize: '9px', fontWeight: 'bold', color: '#fbbf24' }}>SEAL</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

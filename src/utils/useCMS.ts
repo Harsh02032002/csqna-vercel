@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-  ? 'http://localhost:5003/v1/content'
-  : 'https://api.csqna.com/v1/content';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5003/v1';
+const API_URL = `${API_BASE}/content`;
 
 export const useCMS = () => {
   const [content, setContent] = useState<Record<string, string>>({});

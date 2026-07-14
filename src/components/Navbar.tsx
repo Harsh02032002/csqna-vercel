@@ -8,11 +8,11 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="rt-site-header rt-fixed-top dark-menu" style={{ background: 'var(--footer-bg) !important', boxShadow: '0 2px 3px 0 rgba(0, 0, 0, .1) !important' }}>
-      <div className="main-header rt-sticky" style={{ background: 'var(--footer-bg) !important', padding: '10px 0 !important' }}>
+      <div className="main-header rt-sticky" style={{ background: 'var(--footer-bg) !important', padding: '4px 0 !important' }}>
         <nav className="navbar">
           <div className="container">
             <Link to="/" className="brand-logo">
-              <img src="/marketing-assets/images/logo/FamousDotsLogo.png" alt="CSQNA" style={{ maxWidth: '210px' }} />
+              <img src="/marketing-assets/images/logo/FamousDotsLogo.png" alt="CSQNA" style={{ maxWidth: '150px' }} />
             </Link>
             <Link to="/" className="sticky-logo">
               <img src="/marketing-assets/images/logo/Favicon.png" style={{ maxWidth: '40px' }} alt="CSQNA" />
